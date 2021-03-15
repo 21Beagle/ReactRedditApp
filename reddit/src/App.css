@@ -6,23 +6,11 @@ body,
 html,
 #root {
   height: 100%;
+  margin: 0;
 }
 
 html {
   font-size: 18px;
-}
-
-h1 {
-  padding: .77rem 0;
-  background-color: #010c3f;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
-  color: #fff;
-}
-
-h1 .highlight {
-  color: #6c41ec;
 }
 
 h2 {
@@ -31,21 +19,22 @@ h2 {
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  width: 100%;
   height: 100%;
-  padding: 0 17% 10% 17%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  color: #fff;
 }
 
 .Main {
   display: flex;
-  justify-content: space-between;
+  flex-grow: 1;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-around;
   width: 90%;
-  background-color: aqua;
+  background-color: #3D5A80;
 }
 
 @media only screen and (max-width: 1020px) {

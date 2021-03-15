@@ -10,11 +10,14 @@ class Header extends React.Component {
     render () {
         return (
             <div className="Header">
-                <input 
-                placeholder="Search These Posts" 
-                onChange={this.handleTermChange}
-                />
-                <button className="SearchButton" onClick={this.props.onSave} >Search</button>
+                <h1>Reddit App</h1>
+                <div className="SearchBar">
+                    <input 
+                    placeholder="Search These Posts" 
+                    onChange={this.handleTermChange}
+                    />
+                    <button className="SearchButton" onClick={this.props.onSave} >Search</button>  
+                </div>
             </div>
         )
     }

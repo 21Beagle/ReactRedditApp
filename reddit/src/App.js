@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Hello</h1>
       <div className="Main">
-        <RedditFeed />
-        <SubRedditsList />
+          <RedditFeed />
+          <SubRedditsList />
       </div>
     </div>
   );

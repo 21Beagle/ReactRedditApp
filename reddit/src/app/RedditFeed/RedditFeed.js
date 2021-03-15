@@ -1,4 +1,5 @@
 import React from 'react';
+import './RedditFeed.css'
 
 class RedditFeed extends React.Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class RedditFeed extends React.Component {
     render () {
         return (
             <div className="RedditFeed">
-                
+                <p>Reddit Feed</p>
             </div>
         )
     }
