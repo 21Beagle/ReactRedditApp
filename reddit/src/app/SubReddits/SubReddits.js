@@ -1,18 +1,20 @@
 import React from 'react';
+import './SubReddits.css'
+import SubReddit from '../SubReddit/SubReddit'
 
 class SubReddits extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleNameChange = this.handleNameChange.bind(this);
-    }
-    handleNameChange(event) {
-        this.props.onNameChange(event.target.value);
-    }
+    
     render () {
         return (
-            <div className="Playlist">
-                <button className="Playlist-save" onClick={this.props.onSave} >SAVE TO SPOTIFY</button>
-            </div>
+                <div className="subRedditList">
+                    <h2>Subreddits</h2>
+                    {
+                    this.props.subs.map(subs => {
+                        return <SubReddit subs={subs}
+                        key={subs.id} />
+                    })
+                }
+                </div>
         )
     }
 }

@@ -1,10 +1,50 @@
-.RedditFeed {
-  justify-content: center;
+h2 {
   display: flex;
-  margin: 1rem;
-  border: ivory 3px dashed;
+  margin: 0.2rem;
+  align-self: center;
+}
+
+.post {
+  flex: 0;
+  align-self: stretch;
+  margin: 0.25rem;
+  background-color: #3D5A80;
+  color: #98c1D9;
+}
+
+.info{
+  margin: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.upvotes {
+  display: flex;
+  align-self: flex-start;
+}
+
+.title {
+  margin: 0.25rem;
+  display: flex;
+  align-self: flex-start;
+}
+
+.comments {
+  display: flex;
+  margin: 0.25rem;
+  align-self: flex-end;
+}
+
+
+.redditFeed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 65%;
   color: #E0FBFC;
-  width: 66%;
 }
   ::-webkit-scrollbar {
       width: 0px;
@@ -12,7 +52,7 @@
   }
   
   @media only screen and (max-width: 1020px) {
-    .RedditFeed {
+    .redditFeed {
       width: 90%;
       margin-bottom: 2rem;
     }
