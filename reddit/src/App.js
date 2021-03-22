@@ -1,36 +1,43 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Header from './app/Header/Header.js';
 import RedditFeed from './app/RedditFeed/RedditFeed.js';
 import SubReddits from './app/SubReddits/SubReddits';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    
-    this.state = {
-      posts: [ 
-              {title: 'title1', noComments: "4", upVotes: "1000", data: "Some string of text", id: 1},
-              {title: 'title2', noComments: "2", upVotes: "1001", data: "Some string of text", id: 2},
-              {title: 'title3', noComments: "5", upVotes: "1002", data: "Some string of text", id: 3}
-            ],
-    subs: [ 
-              {name: 'SubReddit1',  id: 1},
-              {name: 'SubReddit2',  id: 2},
-              {name: 'SubReddit3',  id: 3}
-            ]
-    };
-    };
-render() {
+function App() {
+    const [subs, setSubs] = useState([ 
+      {name: 'SubReddit1',  id: 1},
+      {name: 'SubReddit2',  id: 2},
+      {name: 'SubReddit3',  id: 3}
+    ])
+    const [articles, setPosts]= useState([])
+
+    useEffect(() => 
+    fetch("http://www.reddit.com/r/popular.json").then(res => {
+          if (res.status != 200) {
+              console.log("ERROR");
+              return;
+          }
+  
+          res.json().then(data => {
+              if (data != null) {
+                  setPosts(data.data.children);
+              }
+          })
+      })
+    ,[subs])
+
+  
+
+  
   return (
     <div className="App">
       <Header />
       <div className="Main">
-          <RedditFeed posts={this.state.posts} />
-          <SubReddits subs={this.state.subs}/>
+          <RedditFeed articles={articles} />
+          <SubReddits subs={subs}/>
       </div>
     </div>
   );
-}
 }
 export default App;

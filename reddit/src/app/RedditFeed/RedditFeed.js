@@ -2,21 +2,16 @@ import React from 'react';
 import './RedditFeed.css'
 import Post from '../Post/Post'
 
-class RedditFeed extends React.Component {
-
-    render () {
+const RedditFeed = (props) => {
+    
         return (
             <div className="redditFeed">
                 <h2>Feed</h2>
-                {
-                    this.props.posts.map(post => {
-                        return <Post post={post}
-                        key={post.id} />
-                    })
-                }
+                 {
+                     (props.articles != null) ? props.articles.map((article, index) => { 
+                     return <Post key={index} article={article.data} />}) : ''
+                 } 
             </div>
         )
     }
-}
-
 export default RedditFeed;
