@@ -2,6 +2,17 @@ h2 {
     color: #EE6C4D;
 }
 
+button {
+    cursor: pointer;
+    color: #E0FBFC;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: .25s;
+    background-color: #293241;
+    font-weight: 500;
+  }
+
+
 .subReddit {
     flex: 0;
     align-self: stretch;

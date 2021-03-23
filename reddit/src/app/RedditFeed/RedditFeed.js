@@ -6,7 +6,7 @@ const RedditFeed = (props) => {
     
         return (
             <div className="redditFeed">
-                <h2>Feed</h2>
+                <h2>Feed - www.reddit.com{props.title}</h2>
                  {
                      (props.articles != null) ? props.articles.map((article, index) => { 
                      return <Post key={index} article={article.data} />}) : ''

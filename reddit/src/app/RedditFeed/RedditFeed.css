@@ -10,6 +10,20 @@ h3 {
   font-size: 1.5rem;
 }
 
+a:visited {
+  color: #EE6C4D;
+}
+
+a:link {
+  color: #98c1D9;
+}
+a:active {
+  color: #98c1D9;
+}
+a:hover {
+  color: #EE6C4D;
+}
+
 .post {
   flex: 0;
   align-self: stretch;
@@ -45,6 +59,7 @@ img{
   display: flex;
   flex-grow: 1;
   align-self: center;
+  overflow: hidden;
 }
 
 .upvotes {
@@ -78,6 +93,7 @@ img{
       width: 0px;
       background: transparent;
   }
+
   
   @media only screen and (max-width: 1020px) {
     .redditFeed {

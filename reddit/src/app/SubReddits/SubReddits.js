@@ -1,22 +1,27 @@
-import React from 'react';
+import React from "react";
 import './SubReddits.css'
-import SubReddit from '../SubReddit/SubReddit'
 
-class SubReddits extends React.Component {
-    
-    render () {
-        return (
-                <div className="subRedditList">
-                    <h2>Subreddits</h2>
-                    {
-                    this.props.subs.map(subs => {
-                        return <SubReddit subs={subs}
-                        key={subs.id} />
-                    })
-                }
-                </div>
-        )
-    }
+
+
+
+const SubReddits = (props) => {
+
+    function handleChange(event) {
+        props.onChange(event);
+      }
+
+    return (
+        <div className="subRedditList">
+            <h2>Subreddits</h2>
+            {
+                props.subs.map(
+                    (subs, index) => {
+                        return <button type="submit" onClick={() => handleChange(subs.data.url)}   className="subReddit" key={index}>{subs.data.title}</button>
+                    }
+                )
+            }
+        </div>
+    )
 }
 
 
