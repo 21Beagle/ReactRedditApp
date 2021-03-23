@@ -12,7 +12,7 @@ function App() {
   const [subReddit, setSubReddit] = useState("r/popular");
 
   useEffect(() =>
-    fetch(`http://www.reddit.com/${subReddit}.json`).then(res => {
+    fetch(`https://www.reddit.com/${subReddit}.json`).then(res => {
       if (res.status !== 200) {
         console.log("ERROR");
         return;
@@ -28,7 +28,7 @@ function App() {
 
 
   useEffect(() =>
-    fetch("http://www.reddit.com/subreddits.json").then(res => {
+    fetch("https://www.reddit.com/subreddits.json").then(res => {
       if (res.status !== 200) {
         console.log("ERROR");
         return;
