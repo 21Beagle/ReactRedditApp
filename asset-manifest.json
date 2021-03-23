@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ReactRedditApp/static/css/main.5379d476.chunk.css",
-    "main.js": "/ReactRedditApp/static/js/main.05f8d7ca.chunk.js",
-    "main.js.map": "/ReactRedditApp/static/js/main.05f8d7ca.chunk.js.map",
+    "main.css": "/ReactRedditApp/static/css/main.8b2bf87f.chunk.css",
+    "main.js": "/ReactRedditApp/static/js/main.5417258e.chunk.js",
+    "main.js.map": "/ReactRedditApp/static/js/main.5417258e.chunk.js.map",
     "runtime-main.js": "/ReactRedditApp/static/js/runtime-main.64d645af.js",
     "runtime-main.js.map": "/ReactRedditApp/static/js/runtime-main.64d645af.js.map",
     "static/js/2.34874fc5.chunk.js": "/ReactRedditApp/static/js/2.34874fc5.chunk.js",
     "static/js/2.34874fc5.chunk.js.map": "/ReactRedditApp/static/js/2.34874fc5.chunk.js.map",
     "index.html": "/ReactRedditApp/index.html",
-    "static/css/main.5379d476.chunk.css.map": "/ReactRedditApp/static/css/main.5379d476.chunk.css.map",
+    "static/css/main.8b2bf87f.chunk.css.map": "/ReactRedditApp/static/css/main.8b2bf87f.chunk.css.map",
     "static/js/2.34874fc5.chunk.js.LICENSE.txt": "/ReactRedditApp/static/js/2.34874fc5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.64d645af.js",
     "static/js/2.34874fc5.chunk.js",
-    "static/css/main.5379d476.chunk.css",
-    "static/js/main.05f8d7ca.chunk.js"
+    "static/css/main.8b2bf87f.chunk.css",
+    "static/js/main.5417258e.chunk.js"
   ]
 }
