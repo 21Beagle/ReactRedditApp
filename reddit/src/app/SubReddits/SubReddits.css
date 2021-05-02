@@ -32,9 +32,6 @@ button {
 
 
 @media only screen and (max-width: 1020px) {
-    .subRedditList {
-      display: none;
-      margin-bottom: 2rem;
-    }
+    
 
   }

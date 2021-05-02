@@ -98,7 +98,6 @@ img{
   @media only screen and (max-width: 1020px) {
     .redditFeed {
       width: 97%;
-      margin-bottom: 2rem;
     }
 
     img {
